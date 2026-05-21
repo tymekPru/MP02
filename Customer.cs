@@ -12,8 +12,7 @@ namespace MP02
 
         public void AddOrder(Order order)
         {
-            if (order == null)
-                throw new ArgumentNullException(nameof(order));
+            ArgumentNullException.ThrowIfNull(order);
 
             if (_orders.Contains(order))
                 return;
@@ -27,8 +26,7 @@ namespace MP02
 
         public void RemoveOrder(Order order)
         {
-            if (order == null)
-                throw new ArgumentNullException(nameof(order));
+            ArgumentNullException.ThrowIfNull(order);
 
             if (_orders.Remove(order))
             {
