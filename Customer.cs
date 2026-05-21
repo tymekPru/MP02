@@ -2,7 +2,7 @@ namespace MP02
 {
     public class Customer(int id, string fullName, string email)
     {
-        private readonly List<Order> _orders = new();
+        private readonly List<Order> _orders = [];
 
         public int Id { get; } = id;
         public string FullName { get; } = fullName;

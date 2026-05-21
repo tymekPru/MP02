@@ -2,8 +2,8 @@ namespace MP02
 {
     public class Order(string number, DateTime createdAt)
     {
-        private readonly List<OrderItem> _items = new();
-        private readonly List<Payment> _payments = new();
+        private readonly List<OrderItem> _items = [];
+        private readonly List<Payment> _payments = [];
 
         public string Number { get; } = number;
         public DateTime CreatedAt { get; } = createdAt;
